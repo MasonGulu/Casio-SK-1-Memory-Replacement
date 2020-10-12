@@ -1,0 +1,89 @@
+
+(rules PCB Keyboard Memory Emulator
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 40)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +5V CS2 "Net-(D1-Pad1)" CS1 "Net-(J1-Pad6)" "Net-(J1-Pad5)" "Net-(J1-Pad4)" "Net-(J1-Pad3)"
+    SDA SCL GND "Net-(U1-Pad13)" "Net-(U1-Pad12)" A8 "Net-(U1-Pad11)" A9
+    A0 A11 A1 OE A2 A10 A3 "Net-(U1-Pad20)"
+    A4 "Net-(U1-Pad19)" A5 "Net-(U1-Pad18)" A6 "Net-(U1-Pad17)" A7 "Net-(U1-Pad16)"
+    A12 "Net-(U1-Pad15)" "Net-(U1-Pad1)" "Net-(U2-Pad4)" KeyboardEnable /GA0 /GA1 /GA2
+    /GA3 /GA7 /GA6 /GA5 /GA4 /GA8 /GA9 /GA10
+    /GA11 "Net-(U4-Pad7)" /GA13 "Net-(U4-Pad3)" /GD0 /GD1 /GD2 /GD3
+    /GD7 /GD6 /GD5 /GD4 "Net-(U11-Pad26)" ArduinoEnable "Net-(U11-Pad13)" "Net-(U11-Pad14)"
+    "Net-(U11-Pad15)" "Net-(U11-Pad16)" "Net-(U11-Pad12)" "Net-(U11-Pad11)" "Net-(U11-Pad10)" "Net-(U11-Pad9)" "Net-(U11-Pad44)" "Net-(U11-Pad1)"
+    "Net-(U11-Pad2)" "Net-(U11-Pad3)" "Net-(U11-Pad43)" "Net-(U11-Pad42)" "Net-(U11-Pad41)" "Net-(U11-Pad40)" "Net-(U11-Pad33)" "Net-(U11-Pad32)"
+    "Net-(U11-Pad31)" "Net-(U11-Pad30)" "Net-(U11-Pad34)" "Net-(U11-Pad35)" "Net-(U11-Pad29)" "Net-(U11-Pad8)" "Net-(U11-Pad7)" "Net-(U11-Pad4)"
+    KWE /GOE /GWE "Net-(U5-Pad16)" "Net-(U5-Pad15)" "Net-(U5-Pad14)" "Net-(U5-Pad13)" "Net-(U5-Pad12)"
+    "Net-(U5-Pad11)" "Net-(U5-Pad9)" "Net-(U5-Pad8)" "Net-(U5-Pad7)" "Net-(U5-Pad6)" "Net-(U5-Pad5)" "Net-(U5-Pad4)" AWE
+    /AOE "Net-(J4-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
