@@ -771,7 +771,7 @@ $EndComp
 Text Notes 7400 7500 0    50   ~ 0
 Casio SK-1 Sample Switcher\n
 Text Notes 8150 7650 0    50   ~ 0
-10/3/2020
+10/16/2020
 Text GLabel 3250 2200 0    50   Input ~ 0
 KeyboardEnable
 Text GLabel 3250 2100 0    50   Input ~ 0
@@ -1579,7 +1579,7 @@ L Device:C C7
 U 1 1 5F9E6CFC
 P 6250 6700
 F 0 "C7" V 6400 6700 50  0000 C CNN
-F 1 "100n" V 6500 6700 50  0000 C CNN
+F 1 "12.5p" V 6500 6750 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6288 6550 50  0001 C CNN
 F 3 "~" H 6250 6700 50  0001 C CNN
 	1    6250 6700
@@ -1590,7 +1590,7 @@ L Device:C C6
 U 1 1 5F9E765F
 P 6250 6200
 F 0 "C6" V 5998 6200 50  0000 C CNN
-F 1 "100n" V 6100 6250 50  0000 C CNN
+F 1 "12.5p" V 6100 6250 50  0000 C CNN
 F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6288 6050 50  0001 C CNN
 F 3 "~" H 6250 6200 50  0001 C CNN
 	1    6250 6200
