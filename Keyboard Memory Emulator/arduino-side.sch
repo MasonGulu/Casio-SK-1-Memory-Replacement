@@ -790,4 +790,6 @@ Connection ~ 7650 3750
 Wire Wire Line
 	7650 4300 7650 4250
 Connection ~ 7650 4250
+Text Notes 8200 3950 0    50   ~ 0
+Might not be required\n
 $EndSCHEMATC
