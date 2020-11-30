@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name inverter)(type KiCad)(uri ${KIPRJMOD}/inverter.pretty)(options "")(descr ""))
+)
