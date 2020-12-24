@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 3 3
 Title "Keyboard Memory Emulator"
 Date "2020-11-29"
-Rev "P-0"
+Rev "P-1"
 Comp "Mason Gulu, Lucas Christy"
 Comment1 ""
 Comment2 ""
@@ -481,12 +481,6 @@ Wire Wire Line
 	3650 4500 3600 4500
 Wire Wire Line
 	3650 4400 3600 4400
-Text Label 4450 5050 0    50   ~ 0
-PD0
-Text Label 4450 5150 0    50   ~ 0
-PD1
-Text Label 4450 5250 0    50   ~ 0
-PD2
 Text GLabel 3650 3900 2    50   Input ~ 0
 SCK
 Text GLabel 3650 3700 2    50   Input ~ 0
@@ -792,4 +786,10 @@ Wire Wire Line
 Connection ~ 7650 4250
 Text Notes 8200 3950 0    50   ~ 0
 Might not be required\n
+Text GLabel 4400 5050 1    50   Input ~ 0
+PD0
+Text GLabel 4500 5150 1    50   Input ~ 0
+PD1
+Text GLabel 4600 5250 1    50   Input ~ 0
+PD2
 $EndSCHEMATC

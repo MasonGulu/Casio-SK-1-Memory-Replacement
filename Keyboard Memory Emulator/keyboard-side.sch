@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 3
 Title "Keyboard Memory Emulator"
 Date "2020-11-29"
-Rev "P-0"
+Rev "P-1"
 Comp "Mason Gulu, Lucas Christy"
 Comment1 ""
 Comment2 ""

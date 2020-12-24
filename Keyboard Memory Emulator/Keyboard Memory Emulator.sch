@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title "Keyboard Memory Emulator"
-Date "2020-11-29"
-Rev "P-0"
+Date "2020-12-22"
+Rev "P-1"
 Comp "Mason Gulu, Lucas Christy"
 Comment1 ""
 Comment2 ""
@@ -279,12 +279,6 @@ F 3 "" H 1150 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9700 3600
-Text Label 1950 4450 1    50   ~ 0
-PD2
-Text Label 2050 4450 1    50   ~ 0
-PD1
-Text Label 2150 4450 1    50   ~ 0
-PD0
 $Comp
 L power:+5V #PWR0129
 U 1 1 5F992D4B
@@ -847,4 +841,12 @@ F 3 "" H 5800 5050 50  0001 C CNN
 	1    5800 5050
 	1    0    0    -1  
 $EndComp
+Text Label 9000 2000 0    50   ~ 0
+GWE
+Text GLabel 2150 4450 1    50   Input ~ 0
+PD0
+Text GLabel 2050 4450 1    50   Input ~ 0
+PD1
+Text GLabel 1950 4450 1    50   Input ~ 0
+PD2
 $EndSCHEMATC
